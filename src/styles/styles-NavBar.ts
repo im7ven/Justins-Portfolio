@@ -23,7 +23,7 @@ export const NavList = styled.ul`
   opacity: 0;
   max-height: 0;
 
-  transition: all 0.5s;
+  transition: max-height 0.3s ease-out, opacity 0.1s ease-in;
 
   &.visible {
     padding: 3rem 0;

@@ -3,6 +3,8 @@ import { css } from "styled-components";
 export const Grid1By2 = css`
   display: grid;
   gap: 4rem;
+  justify-items: center;
+  align-items: center;
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
