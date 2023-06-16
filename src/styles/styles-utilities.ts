@@ -1,6 +1,15 @@
 import { css } from "styled-components";
 
-export const singleRowGrid = css`
+export const Grid1By2 = css`
+  display: grid;
+  gap: 4rem;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+`;
+
+export const Grid1By3 = css`
   display: grid;
   gap: 4rem;
 
