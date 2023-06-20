@@ -31,7 +31,7 @@ export const projects: Project[] = [
     icon: htmlCssJs,
     image: moshified,
     maxChars: 75,
-    heading: "Moshified - Cloud Hosting",
+    heading: "Moshify",
     children:
       "Moshified is a Cloud hosting company. This is a static responsive webpage built with mostly HTML, and CSS. The page also includes some Javascript functionality.",
   },

@@ -36,4 +36,5 @@ export const ExpandProjectsBtn = styled.div`
   background:0;
   outline: 0;
   border: 0;
+  cursor: pointer;
 `;
