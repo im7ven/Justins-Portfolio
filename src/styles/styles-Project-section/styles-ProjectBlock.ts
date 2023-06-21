@@ -37,4 +37,5 @@ export const ExpandProjectsBtn = styled.div`
   outline: 0;
   border: 0;
   cursor: pointer;
+  margin-top: 3rem;
 `;

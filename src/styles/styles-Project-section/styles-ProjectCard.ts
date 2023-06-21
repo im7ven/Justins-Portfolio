@@ -11,11 +11,7 @@ export const ProjectCardWrapper = styled.article`
 
 export const H2 = styled.h2`
   ${highlightText}
-  font-size:2.2rem;
-
-  @media screen and (min-width: 1200px) {
-    font-size: 2.4rem;
-  }
+  font-size:2.5rem;
 `;
 
 export const ProjectDescription = styled.p`
@@ -23,6 +19,7 @@ export const ProjectDescription = styled.p`
   font-size: 1.8rem;
   max-width: 45rem;
   display: inline;
+  line-height: 1.5;
 
   @media screen and (min-width: 1350px) {
     font-size: 2rem;
@@ -37,6 +34,7 @@ export const ExpandBtn = styled.button`
   font-weight: 700;
   background: 0;
   font-size: 1.6rem;
+  cursor: pointer;
 `;
 
 export const ProjectBtnWrapper = styled.div`
@@ -46,7 +44,7 @@ export const ProjectBtnWrapper = styled.div`
   margin-top: 4rem;
 `;
 export const ProjectBtn = styled.button`
-  border-radius: 30px;
+  border-radius: 10px;
   color: #fff;
   padding: 1rem 4rem;
   border: 0;
@@ -54,12 +52,8 @@ export const ProjectBtn = styled.button`
   font-size: 1.7rem;
   text-transform: uppercase;
   font-weight: 700;
-  background: rgb(255, 255, 255);
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(98, 0, 245, 1) 61%
-  );
+  background: #6200f5;
+  cursor: pointer;
 
   @media screen and (min-width: 1300px) {
     padding: 1rem 4rem;

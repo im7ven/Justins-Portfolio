@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { ImCss3 } from "react-icons/im";
-import { IoLogoHtml5, IoLogoJavascript } from "react-icons/io";
+import { IoLogoHtml5 } from "react-icons/io";
 import { GrReactjs } from "react-icons/gr";
 import { SiTypescript, SiJavascript } from "react-icons/si";
 import moshified from "../../images/Moshified2.webp";
