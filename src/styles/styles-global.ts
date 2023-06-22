@@ -4,7 +4,10 @@ export const GlobalStyles = createGlobalStyle`
 
 html {
     font-size: 62.5%;
+
 }
+
+
 
 body{
     margin:0;
@@ -12,6 +15,12 @@ body{
     box-sizing: border-box;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     background:#232323;
+
+}
+
+::selection {
+    color:#fff;
+    background: #6200F5;
 }
 
 `;
