@@ -1,7 +1,7 @@
 import {
   ExpandProjectsBtn,
-  H2,
   ProjectGridWrapper,
+  ProjectSectionHeading,
   ProjectWrapper,
 } from "../../styles/styles-Project-section/styles-ProjectBlock";
 import { ProjectCard } from "./ProjectCard";
@@ -30,7 +30,7 @@ export const ProjectBlock = ({ maxProjects, projects }: Props) => {
   return (
     <>
       <ProjectWrapper>
-        <H2>Projects</H2>
+        <ProjectSectionHeading>My Projects</ProjectSectionHeading>
         <ProjectGridWrapper>
           {visibleProjects.map((project, index) => (
             <ProjectCard key={index} {...project} />

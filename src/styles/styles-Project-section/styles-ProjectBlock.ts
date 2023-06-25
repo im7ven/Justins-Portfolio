@@ -1,15 +1,28 @@
 import styled from "styled-components";
 import { Grid1By2 } from "../styles-utilities";
-import { highlightText } from "../styles.typograhphy";
+import { heading, highlightText } from "../styles.typograhphy";
 
 export const ProjectWrapper = styled.section`
-  padding: 4rem 6rem;
+  padding: 4rem 6rem 10rem;
   background: #000;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #474747;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 40%;
+    right: 40%;
+    box-shadow: 0 0 50rem 10rem #6200f5;
+  }
 `;
 
 export const ProjectGridWrapper = styled.div`
   ${Grid1By2}
   max-width: 1600px;
+  position: relative;
   margin: 0 auto;
   @media screen and (min-width: 1350px) {
     grid-template-columns: repeat(3, 1fr);
@@ -17,15 +30,16 @@ export const ProjectGridWrapper = styled.div`
   transition: all 0.6s;
 `;
 
-export const H2 = styled.h2`
+export const ProjectSectionHeading = styled.h2`
   text-align: center;
   font-size: 4rem;
-  text-transform: uppercase;
-  color: #e4ba00;
-  font-weight: 400;
+  position: relative;
+  ${heading}
+  text-transform:uppercase;
+  margin: 8rem 0;
 
   @media screen and (min-width: 768px) {
-    font-size: 5.5rem;
+    font-size: 6rem;
   }
 `;
 
@@ -37,5 +51,5 @@ export const ExpandProjectsBtn = styled.div`
   outline: 0;
   border: 0;
   cursor: pointer;
-  margin-top: 3rem;
+  margin-top: 8rem;
 `;
