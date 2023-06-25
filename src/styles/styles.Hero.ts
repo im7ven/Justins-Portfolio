@@ -6,7 +6,8 @@ export const HeroWrapper = styled.section`
   ${Grid1By2}
   ${containerLg}
 ${containerCenter}
-min-height:100vh;
+padding:0 2rem;
+  min-height: 100vh;
   margin-bottom: 6rem;
 
   @media screen and (min-width: 768px) {
@@ -26,7 +27,6 @@ export const Highlight = styled.span`
 export const Avatar = styled.img`
   border-radius: 50%;
   grid-row: 1;
-
   max-width: 30rem;
   box-shadow: 0 20px 10px 0 #000;
   max-width: 100%;
@@ -70,7 +70,6 @@ export const AvatarWrapper = styled.div`
 export const AboutWrapper = styled.div`
   color: #fff;
   line-height: 1.6;
-  padding: 3rem 3rem 0;
   font-size: 1.6rem;
   transition: opacity 0.5s;
   grid-area: 1/2;
@@ -97,11 +96,15 @@ export const AboutBtn = styled.button`
   color: #fff;
   font-size: 1.6rem;
   font-weight: 700;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   border-radius: 5px;
   align-self: center;
   transition: 0.4s;
   cursor: pointer;
+
+  @media screen and (min-width: 339px) {
+    padding: 2rem 3rem;
+  }
 
   &:hover {
     scale: 1.1;
