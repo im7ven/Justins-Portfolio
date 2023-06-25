@@ -3,7 +3,7 @@ import { Grid1By2 } from "../styles-utilities";
 import { heading, highlightText } from "../styles.typograhphy";
 
 export const ProjectWrapper = styled.section`
-  padding: 4rem 6rem 10rem;
+  padding: 4rem 0 10rem;
   background: #000;
   position: relative;
   overflow: hidden;
@@ -23,6 +23,7 @@ export const ProjectGridWrapper = styled.div`
   ${Grid1By2}
   max-width: 1600px;
   position: relative;
+  padding: 0 3rem;
   margin: 0 auto;
   @media screen and (min-width: 1350px) {
     grid-template-columns: repeat(3, 1fr);
