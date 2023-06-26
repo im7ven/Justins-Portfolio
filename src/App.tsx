@@ -4,6 +4,7 @@ import { ProjectBlock } from "./components/Project-section/ProjectBlock";
 import { GlobalStyles } from "./styles/styles-global";
 import { projects } from "./components/Project-section/ProjectsData";
 import { useEffect, useState } from "react";
+import { SkillsBlock } from "./components/Skills-section/SkillsBlock";
 
 function App() {
   const [maxProjects, setMaxProjects] = useState(3);
@@ -34,9 +35,7 @@ function App() {
         maxProjects={maxProjects}
         projects={projects}
       ></ProjectBlock>
-      <br />
-      <br />
-      <br />
+      <SkillsBlock />
     </>
   );
 }
