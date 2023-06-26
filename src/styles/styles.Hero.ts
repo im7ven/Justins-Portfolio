@@ -5,10 +5,21 @@ import { h1, heading, highlightText } from "./styles.typograhphy";
 export const HeroWrapper = styled.section`
   ${Grid1By2}
   ${containerLg}
-${containerCenter}
-padding:0 2rem;
+  ${containerCenter}
+  padding:0 2rem;
   min-height: 100vh;
   margin-bottom: 6rem;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30%;
+    right: 30%;
+    box-shadow: 0 0 50rem 8rem #6200f5;
+  }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
@@ -28,7 +39,7 @@ export const Avatar = styled.img`
   border-radius: 50%;
   grid-row: 1;
   max-width: 30rem;
-  box-shadow: 0 20px 10px 0 #000;
+  box-shadow: 0 10px 5px 0 #b2b2b2;
   max-width: 100%;
 
   @media screen and (min-width: 500px) {

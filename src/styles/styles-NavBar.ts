@@ -5,7 +5,7 @@ export const Nav = styled.div`
   justify-content: flex-end;
   flex-wrap: wrap;
   padding: 3rem 5rem;
-  background-color: #000;
+  background-color: #111;
 `;
 
 export const NavIconWrapper = styled.div`
