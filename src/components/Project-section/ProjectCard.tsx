@@ -21,6 +21,8 @@ interface Props {
   heading: string;
   children: string;
   maxChars?: number;
+  repoPath: string;
+  sitePath: string;
 }
 
 export const ProjectCard = ({
@@ -29,6 +31,8 @@ export const ProjectCard = ({
   children,
   maxChars = 30,
   icon,
+  repoPath,
+  sitePath,
 }: Props) => {
   const [isExpanded, setExpanded] = useState(false);
 
@@ -51,8 +55,12 @@ export const ProjectCard = ({
           </ProjectDescription>
           <ExpandBtn onClick={handleExpand}>{renderBtnLabel}</ExpandBtn>
           <ProjectBtnWrapper>
-            <ProjectBtn>Site</ProjectBtn>
-            <ProjectBtn>Repo</ProjectBtn>
+            <a href={sitePath}>
+              <ProjectBtn>Site</ProjectBtn>
+            </a>
+            <a href={repoPath}>
+              <ProjectBtn>Repo</ProjectBtn>
+            </a>
           </ProjectBtnWrapper>
         </div>
       </ProjectInfo>

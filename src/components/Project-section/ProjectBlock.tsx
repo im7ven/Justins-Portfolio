@@ -13,6 +13,8 @@ interface Project {
   heading: string;
   children: string;
   maxChars?: number;
+  repoPath: string;
+  sitePath: string;
 }
 
 interface Props {
