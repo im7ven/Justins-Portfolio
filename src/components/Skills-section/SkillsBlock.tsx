@@ -56,23 +56,23 @@ export const SkillsBlock = () => {
           </SkillsFeature>
         </div>
         <SkillsBadgeWrapper>
-          <SkillsBadge badgeLabel="html">
-            <SiHtml5 color="red" size="60px" />
-          </SkillsBadge>
-          <SkillsBadge badgeLabel="css">
-            <FaCss3 color="dodgerblue" size="60px" />
-          </SkillsBadge>
-          <SkillsBadge badgeLabel="javascript">
-            <SiJavascript color="yellow" size="60px" />
-          </SkillsBadge>
           <SkillsBadge badgeLabel="react">
-            <FaReact color="dodgerblue" size="60px" />
+            <FaReact color="dodgerblue" size="55px" />
           </SkillsBadge>
           <SkillsBadge badgeLabel="typescript">
-            <SiTypescript color="dodgerblue" size="60px" />
+            <SiTypescript color="dodgerblue" size="50px" />
+          </SkillsBadge>
+          <SkillsBadge badgeLabel="javascript">
+            <SiJavascript color="#f0db4f" size="50px" />
           </SkillsBadge>
           <SkillsBadge badgeLabel="git">
-            <FaGitAlt color="red" size="60px" />
+            <FaGitAlt color="#f1502F" size="60px" />
+          </SkillsBadge>
+          <SkillsBadge badgeLabel="html">
+            <SiHtml5 color="#e34c26" size="55px" />
+          </SkillsBadge>
+          <SkillsBadge badgeLabel="css">
+            <FaCss3 color="dodgerblue" size="55px" />
           </SkillsBadge>
         </SkillsBadgeWrapper>
       </SkillsGridWrapper>

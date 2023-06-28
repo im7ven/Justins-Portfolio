@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BadgeWrapper = styled.div`
   background: #232332;
   border-radius: 20px;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 2rem;
   color: white;
   display: flex;
   gap: 2rem;
