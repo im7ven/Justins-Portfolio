@@ -20,13 +20,16 @@ export const Footer = () => {
           <Author>&copy;2023 Justin Alexander</Author>
         </div>
         <FooterIconWrapper>
-          <MediaLink href="https://github.com/im7ven">
+          <MediaLink target="_blank" href="https://github.com/im7ven">
             <FaGithubSquare size="40px" color="#fff" />
           </MediaLink>
-          <MediaLink href="https://www.linkedin.com/in/justin-alexander-27542522b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDOInxybgSGinmrWfEzpVRA%3D%3D">
+          <MediaLink
+            target="_blank"
+            href="https://www.linkedin.com/in/justin-alexander-27542522b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDOInxybgSGinmrWfEzpVRA%3D%3D"
+          >
             <FaLinkedin size="40px" color="#fff" />
           </MediaLink>
-          <MediaLink href="mailto:alexanderrr416@gmail.com">
+          <MediaLink target="_blank" href="mailto:alexanderrr416@gmail.com">
             <IoMail size="40px" color="#fff" />
           </MediaLink>
         </FooterIconWrapper>
