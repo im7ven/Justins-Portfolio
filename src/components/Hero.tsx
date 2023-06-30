@@ -15,9 +15,10 @@ import {
   AboutHeading,
   ExpandAboutBtn,
 } from "../styles/styles.Hero";
+import { MediaLink } from "../styles/styles-Project-section/styles-ProjectBlock";
 
 const aboutMe = [
-  "Here is my story. I am an enthusiastic individual who is passionate about continuous growth and learning. With an insatiable curiosity for new skills and technologies, I embrace every opportunity to expand my knowledge with a focus towards frontend development. My goal is to be persistent in my ability to create pleasant user experiences . ",
+  "Here is my story. I am an enthusiastic individual who is passionate about continuous growth and learning. With an insatiable curiosity for new skills and technologies, I embrace every opportunity to expand my knowledge with a focus towards frontend development. My goal is to be persistent in my ability to create pleasant user experiences. ",
   "Although my professional background lies within the food industry, I discovered a passion for web development that sparked a career transition. Everyday, I eagerly embrace new concepts and techniques, striving to improve. The challenge of pushing boundaries and exploring new possibilities excites me, and I am committed to my journey as a aspiring developer.",
   "The opportunity to collaborate and work with others, in a web development environment, is something I look forward to. I genuinely enjoy meeting new people, fostering meaningful connections, and collectively working towards a common goal.",
 ];
@@ -70,8 +71,15 @@ export const Hero = () => {
           </H1>
           <Separator />
           <HeroIconWrapper>
-            <FaGithubSquare color="#fff" size="65px" />
-            <FaLinkedin color="#fff" size="65px" />
+            <MediaLink target="_blank" href="https://github.com/im7ven">
+              <FaGithubSquare color="#fff" size="65px" />
+            </MediaLink>
+            <MediaLink
+              target="_blank"
+              href="https://www.linkedin.com/in/justin-alexander-27542522b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtoFsthPqR0mXJnE4jjj2zA%3D%3D"
+            >
+              <FaLinkedin color="#fff" size="65px" />
+            </MediaLink>
             <AboutBtn onClick={handleButtonClick}>About Me</AboutBtn>
           </HeroIconWrapper>
         </div>

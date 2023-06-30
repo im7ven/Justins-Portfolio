@@ -5,6 +5,8 @@ import { GlobalStyles } from "./styles/styles-global";
 import { projects } from "./components/Project-section/ProjectsData";
 import { useEffect, useState } from "react";
 import { SkillsBlock } from "./components/Skills-section/SkillsBlock";
+import { ContactBlock } from "./components/Contact/ContactBlock";
+import { Footer } from "./components/Footer";
 
 function App() {
   const [maxProjects, setMaxProjects] = useState(3);
@@ -36,6 +38,8 @@ function App() {
         projects={projects}
       ></ProjectBlock>
       <SkillsBlock />
+      <ContactBlock />
+      <Footer />
     </>
   );
 }

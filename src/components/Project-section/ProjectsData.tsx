@@ -38,7 +38,7 @@ export const projects: Project[] = [
     sitePath: "https://game-hub-sable-five.vercel.app/",
     repoPath: "https://github.com/im7ven/Game-Hub",
     children:
-      "This project uses Rawg's API to fetch various data such as games, platforms, critic scores, genres ect. It allows users to search games, filter games by platform, genres and more. 90 percent of this project  was created using many components from Chalkra UI. I have obtained a lot of knowledge building this end-of-course project, with the help of my instructor. ",
+      "This project uses Rawg's API to fetch various data such as games, platforms, critic scores, genres ect. It allows users to search games, filter games by platform, by genres and more. Built with Chalkra UI, I have obtained a lot of knowledge building this end-of-course project, and I look forward to advancing my knowledge working with APIs. ",
   },
   {
     icon: htmlCssJs,
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     sitePath: "https://static-job-listing-justinalexander.netlify.app/",
     repoPath: "https://github.com/im7ven/Job-listing-with-filter",
     children:
-      "This Project is static job listings for web development positions. It is a responsive project that has some filter functionality. The filter accepts multiple filtering conditions, and will display jobs that match all filters. This was my first project using react and typescript, I have learned a lot of important fundamentals and how I can structure my components in a more modular way.",
+      "This Project is a static job listing of web development positions. It is a responsive project that has some filter functionality. The filter accepts multiple filtering conditions, and will display jobs that match all filters. This was my first project using react and typescript, I have learned a lot of important fundamentals, and how I can structure my components in a more modular way.",
   },
   {
     icon: htmlCssJs,
@@ -68,6 +68,6 @@ export const projects: Project[] = [
     sitePath: "https://age-calculator-justinalexander.netlify.app/",
     repoPath: "https://github.com/im7ven/Age-Calculator",
     children:
-      "The Age calculator is a project that accepts a users birthday, and will return their age in years, months, and days. The form has validation checks to insure the user is inputting a valid date, and a date that is not in the future of the current time. The functionality involves manipulating the Date object to return the correct values upon user input.",
+      "The Age calculator is a project that accepts a users birthday, and will return their age in years, months, and days. The form has validation checks to insure the user is inputting a valid date, and a date that does not exceed the current day. The functionality involves manipulating the Date object to return the correct values upon user input.",
   },
 ];
