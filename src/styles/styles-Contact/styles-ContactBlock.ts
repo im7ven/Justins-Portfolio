@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { heading, highlightText } from "../styles.typograhphy";
+import { heading, highlightText } from "../styles.typography";
+import { ContactBtn } from "./styles-ContactForm";
 
 export const ContactWrapper = styled.section`
   border-top: 1px solid #474747;
@@ -18,7 +19,7 @@ export const ContactWrapper = styled.section`
 `;
 export const ContactGridWrapper = styled.section`
   display: grid;
-  gap: 4rem;
+  gap: 7rem;
   justify-items: center;
   align-items: center;
   max-width: 1700px;
@@ -26,8 +27,8 @@ export const ContactGridWrapper = styled.section`
 
   @media screen and (min-width: 1100px) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
   }
-  margin: 10rem auto;
 `;
 
 export const ContactHeading = styled.h2`
@@ -37,7 +38,7 @@ export const ContactHeading = styled.h2`
   text-align: center;
   position: relative;
   margin: 11rem 0;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.2rem;
   @media screen and (min-width: 768px) {
     font-size: 6rem;
   }
@@ -67,4 +68,8 @@ export const ContactDescription = styled.p`
   @media screen and (min-width: 768px) {
     font-size: 2.3rem;
   }
+`;
+
+export const EmailBtn = styled.button`
+  ${ContactBtn}
 `;

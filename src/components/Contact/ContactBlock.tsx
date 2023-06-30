@@ -4,10 +4,12 @@ import {
   ContactHeading,
   ContactWrapper,
   DescriptionHeading,
+  EmailBtn,
   HeadingIconFlex,
 } from "../../styles/styles-Contact/styles-ContactBlock";
 import { AiFillWechat } from "react-icons/ai";
 import { ContactForm } from "./ContactForm";
+import { ContactBtn } from "../../styles/styles-Contact/styles-ContactForm";
 
 export const ContactBlock = () => {
   return (
@@ -25,8 +27,12 @@ export const ContactBlock = () => {
             exciting new projects, brainstorming innovative ideas, or simply
             having a chat about all things code. I am open to collaborations
             with fellow developers, designers, and tech enthusiasts. Feel free
-            to reach out, and let's bring our ideas to life!
+            to reach out, and let's bring our ideas to life! Fill out the form
+            or email.
           </ContactDescription>
+          <a href="mailto:alexanderrr416@gmail.com">
+            <EmailBtn>Email Me</EmailBtn>
+          </a>
         </div>
         <ContactForm />
       </ContactGridWrapper>
