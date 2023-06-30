@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import { Grid1By2 } from "../styles-utilities";
-import { heading, highlightText } from "../styles.typograhphy";
+import { heading, highlightText } from "../styles.typography";
 
 export const ProjectWrapper = styled.section`
-  padding: 4rem 0 10rem;
-  background: #000;
+  padding: 2rem 0 10rem;
   position: relative;
   overflow: hidden;
   border-top: 1px solid #474747;
@@ -53,4 +52,13 @@ export const ExpandProjectsBtn = styled.div`
   border: 0;
   cursor: pointer;
   margin-top: 8rem;
+`;
+
+export const MediaLink = styled.a`
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-1rem);
+  }
 `;

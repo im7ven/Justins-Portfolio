@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { highlightText } from "../styles.typograhphy";
+import { highlightText } from "../styles.typography";
 
 export const ProjectCardWrapper = styled.article`
   border: 10px solid #232323;
