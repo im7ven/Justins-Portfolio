@@ -9,7 +9,6 @@ import {
 } from "../../styles/styles-Contact/styles-ContactBlock";
 import { AiFillWechat } from "react-icons/ai";
 import { ContactForm } from "./ContactForm";
-import { ContactBtn } from "../../styles/styles-Contact/styles-ContactForm";
 
 export const ContactBlock = () => {
   return (
