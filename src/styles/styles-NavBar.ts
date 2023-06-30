@@ -15,10 +15,9 @@ export const Nav = styled.div`
 
 export const NavTitle = styled.h2`
   ${highlightText}
-
   font-size: 5.5rem;
-
   margin: 0;
+  font-family: "Gotu", sans-serif;
 `;
 
 export const NavIconWrapper = styled.div`

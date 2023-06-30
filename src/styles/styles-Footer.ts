@@ -19,6 +19,7 @@ export const FooterTitle = styled.h2`
   ${highlightText}
   font-size:4rem;
   display: inline;
+  font-family: "Gotu", sans-serif;
 `;
 
 export const FooterIconWrapper = styled.div`
