@@ -77,6 +77,10 @@ export const SubmittedMsg = styled.p`
 export const FormErrors = styled.p`
   color: red;
   font-size: 1.6rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.9rem;
+  }
 `;
 
 export const LabelInputGroup = styled.div`
