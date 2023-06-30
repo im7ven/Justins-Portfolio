@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Grid1By2, containerCenter, containerLg } from "./styles-utilities";
-import { h1, heading, highlightText } from "./styles.typograhphy";
+import { h1, heading, highlightText } from "./styles.typography";
 
 export const HeroWrapper = styled.section`
   ${Grid1By2}
@@ -95,7 +95,7 @@ export const AboutWrapper = styled.div`
   }
 `;
 
-export const AboutHeading = styled.h2`
+export const AboutHeading = styled.h3`
   ${highlightText}
 `;
 
