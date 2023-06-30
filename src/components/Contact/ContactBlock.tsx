@@ -12,7 +12,7 @@ import { ContactForm } from "./ContactForm";
 
 export const ContactBlock = () => {
   return (
-    <ContactWrapper>
+    <ContactWrapper id="contact">
       <ContactHeading>Contact</ContactHeading>
       <ContactGridWrapper>
         <div>

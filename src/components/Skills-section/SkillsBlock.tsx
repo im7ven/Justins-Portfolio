@@ -14,7 +14,7 @@ import { FaCss3, FaReact, FaGitAlt } from "react-icons/fa";
 
 export const SkillsBlock = () => {
   return (
-    <SkillsWrapper>
+    <SkillsWrapper id="skills">
       <SkillsHeading>Some of my Skills Include</SkillsHeading>
       <SkillsGridWrapper>
         <div>

@@ -1,11 +1,24 @@
 import styled from "styled-components";
+import { highlightText } from "./styles.typography";
 
 export const Nav = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  padding: 3rem 5rem;
-  background-color: #111;
+  padding: 1.8rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 2.5rem 5rem;
+  }
+`;
+
+export const NavTitle = styled.h2`
+  ${highlightText}
+
+  font-size: 5.5rem;
+
+  margin: 0;
 `;
 
 export const NavIconWrapper = styled.div`
@@ -17,12 +30,11 @@ export const NavIconWrapper = styled.div`
 `;
 
 export const NavList = styled.ul`
-  width: 100%;
   list-style: none;
+  width: 100%;
   margin: 0;
   opacity: 0;
   max-height: 0;
-
   transition: max-height 0.3s ease-out, opacity 0.1s ease-in;
 
   &.visible {
@@ -42,9 +54,7 @@ export const NavList = styled.ul`
 `;
 
 export const NavListItems = styled.li`
-  color: #cecece;
   padding: 1rem 0;
-  font-size: 2.4rem;
   cursor: pointer;
   border-bottom: 2px solid white;
   transition: all 0.3s;
@@ -56,4 +66,10 @@ export const NavListItems = styled.li`
       transform: scale(1.2);
     }
   }
+`;
+
+export const NavLinks = styled.a`
+  color: #cecece;
+  font-size: 2.4rem;
+  text-decoration: none;
 `;

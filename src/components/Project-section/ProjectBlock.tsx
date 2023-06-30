@@ -31,7 +31,7 @@ export const ProjectBlock = ({ maxProjects, projects }: Props) => {
 
   return (
     <>
-      <ProjectWrapper>
+      <ProjectWrapper id="projects">
         <ProjectSectionHeading>My Projects</ProjectSectionHeading>
         <ProjectGridWrapper>
           {visibleProjects.map((project, index) => (
