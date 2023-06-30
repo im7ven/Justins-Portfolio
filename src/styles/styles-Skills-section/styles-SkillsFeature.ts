@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { highlightText } from "../styles.typograhphy";
+import { highlightText } from "../styles.typography";
 
 export const FeatureWrapper = styled.article`
   display: flex;
@@ -37,6 +37,6 @@ export const FeatureDescription = styled.p`
   line-height: 1.7;
   font-size: 1.6rem;
   @media screen and (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 `;

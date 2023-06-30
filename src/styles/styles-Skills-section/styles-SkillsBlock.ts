@@ -1,9 +1,7 @@
 import styled from "styled-components";
-import { Grid1By2 } from "../styles-utilities";
-import { heading } from "../styles.typograhphy";
+import { heading } from "../styles.typography";
 
 export const SkillsWrapper = styled.section`
-  background: #000;
   padding: 2rem 3rem;
   border-top: 1px solid #474747;
   position: relative;
@@ -38,6 +36,7 @@ export const SkillsHeading = styled.h2`
   margin: 8rem 0;
   font-size: 4rem;
   position: relative;
+  text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
     font-size: 6rem;

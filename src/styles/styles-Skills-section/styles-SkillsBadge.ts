@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const BadgeWrapper = styled.div`
-  background: #232332;
   border-radius: 20px;
   padding: 0.8rem 2rem;
   color: white;
@@ -10,5 +9,6 @@ export const BadgeWrapper = styled.div`
   font-size: 1.8rem;
   align-items: center;
   text-transform: uppercase;
-  border-bottom: 4px solid #e4ba00;
+  box-shadow: 0 0 10px 1px #6200f5;
+  border-top: 10px solid #6200f5;
 `;
