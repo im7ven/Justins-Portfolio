@@ -1,7 +1,6 @@
 import { FieldValues, useForm } from "react-hook-form";
 import axios from "axios";
 import {
-  FormBtn,
   FormInput,
   FormLabel,
   FormTextarea,
@@ -9,6 +8,7 @@ import {
   FormErrors,
   LabelInputGroup,
   SubmittedMsg,
+  FormBtn,
   //   SubmittedMsg,
 } from "../../styles/styles-Contact/styles-ContactForm";
 import { useState } from "react";
@@ -126,7 +126,11 @@ export const ContactForm = () => {
         )}
       </LabelInputGroup>
 
-      {isSubmitted ? null : <FormBtn type="submit">Send</FormBtn>}
+      {isSubmitted ? null : (
+        <FormBtn className="expand-Btn" type="submit">
+          Send
+        </FormBtn>
+      )}
 
       {submittedMsg && <SubmittedMsg>{submittedMsg}</SubmittedMsg>}
     </Form>

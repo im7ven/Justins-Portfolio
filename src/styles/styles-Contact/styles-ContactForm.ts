@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import { highlightText } from "../styles.typograhphy";
+import { highlightText } from "../styles.typography";
+import { css } from "styled-components";
 
 export const Form = styled.form`
   background: #232323;
-  padding: 5rem 3rem;
+  padding: 5rem 4rem;
   border-radius: 20px;
   width: 80%;
   position: relative;
-  border-right: 3px solid #e4ba00;
   border-left: 3px solid #e4ba00;
 `;
 
@@ -49,7 +49,7 @@ export const FormTextarea = styled.textarea`
   }
 `;
 
-export const FormBtn = styled.button`
+export const ContactBtn = css`
   padding: 1.5rem 5rem;
   outline: 0;
   border: 0;
@@ -59,8 +59,11 @@ export const FormBtn = styled.button`
   border-radius: 5px;
   font-weight: 700;
   background: #6200f5;
-  margin: 0 auto;
   cursor: pointer;
+`;
+export const FormBtn = styled.button`
+  ${ContactBtn}
+  width:100%;
 `;
 
 export const SubmittedMsg = styled.p`
