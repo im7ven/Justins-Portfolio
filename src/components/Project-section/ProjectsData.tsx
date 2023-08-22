@@ -2,11 +2,12 @@ import { ReactNode } from "react";
 import { ImCss3 } from "react-icons/im";
 import { IoLogoHtml5 } from "react-icons/io";
 import { GrReactjs } from "react-icons/gr";
-import { SiTypescript, SiJavascript } from "react-icons/si";
+import { SiTypescript, SiJavascript, SiFirebase } from "react-icons/si";
 import moshified from "../../images/Moshified2.webp";
 import ageCalc from "../../images/age-calc.webp";
 import jobListing from "../../images/job-listing.webp";
 import gameHub from "../../images/gamehub.webp";
+import xpenseTracker from "../../images/XpenseT.webp";
 
 interface Project {
   icon: ReactNode[];
@@ -29,6 +30,12 @@ const reactTypescript: ReactNode[] = [
   <SiTypescript size="30px" color="dodgerblue" />,
 ];
 
+const reactTsFirebase: ReactNode[] = [
+  <GrReactjs size="30px" color="dodgerblue" />,
+  <SiTypescript size="30px" color="dodgerblue" />,
+  <SiFirebase size="30px" color="#ffcb2b" />,
+];
+
 export const projects: Project[] = [
   {
     icon: reactTypescript,
@@ -39,6 +46,16 @@ export const projects: Project[] = [
     repoPath: "https://github.com/im7ven/Game-Hub",
     children:
       "This project uses Rawg's API to fetch various data such as games, platforms, critic scores, genres ect. It allows users to search games, filter games by platform, by genres and more. Built with Chalkra UI, I have obtained a lot of knowledge building this end-of-course project, and I look forward to advancing my knowledge working with APIs. ",
+  },
+  {
+    icon: reactTsFirebase,
+    image: xpenseTracker,
+    maxChars: 75,
+    heading: "XPense Tracker",
+    sitePath: "https://x-pense-tracker.vercel.app/",
+    repoPath: "https://github.com/im7ven/Expense-Tracker.git",
+    children:
+      "Built an expense tracker app with Firebase authentication, empowering users to manage their expenses effortlessly. Users can log expenses, apply filters by category, visualize data through Chart.js, and create personalized budget plans for better financial control.",
   },
   {
     icon: htmlCssJs,
