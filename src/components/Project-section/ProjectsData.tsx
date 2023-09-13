@@ -2,12 +2,19 @@ import { ReactNode } from "react";
 import { ImCss3 } from "react-icons/im";
 import { IoLogoHtml5 } from "react-icons/io";
 import { GrReactjs } from "react-icons/gr";
-import { SiTypescript, SiJavascript, SiFirebase } from "react-icons/si";
+import {
+  SiTypescript,
+  SiJavascript,
+  SiFirebase,
+  SiChakraui,
+  SiStyledcomponents,
+} from "react-icons/si";
 import moshified from "../../images/Moshified2.webp";
 import ageCalc from "../../images/age-calc.webp";
 import jobListing from "../../images/job-listing.webp";
 import gameHub from "../../images/gamehub.webp";
 import xpenseTracker from "../../images/XpenseT.webp";
+import audiophile from "../../images/audiophileE-commerce.webp";
 
 interface Project {
   icon: ReactNode[];
@@ -25,20 +32,28 @@ const htmlCssJs: ReactNode[] = [
   <SiJavascript size="30px" color="#f0db4f" />,
 ];
 
-const reactTypescript: ReactNode[] = [
+const reactTypescriptStyledCom: ReactNode[] = [
   <GrReactjs size="30px" color="dodgerblue" />,
   <SiTypescript size="30px" color="dodgerblue" />,
+  <SiStyledcomponents size="45px" color="#f3b728" />,
 ];
 
-const reactTsFirebase: ReactNode[] = [
+const reactTypescriptChakra: ReactNode[] = [
+  <GrReactjs size="30px" color="dodgerblue" />,
+  <SiTypescript size="30px" color="dodgerblue" />,
+  <SiChakraui size="30px" color="#70cad0" />,
+];
+
+const reactTsFirebaseChakra: ReactNode[] = [
   <GrReactjs size="30px" color="dodgerblue" />,
   <SiTypescript size="30px" color="dodgerblue" />,
   <SiFirebase size="30px" color="#ffcb2b" />,
+  <SiChakraui size="30px" color="#70cad0" />,
 ];
 
 export const projects: Project[] = [
   {
-    icon: reactTypescript,
+    icon: reactTypescriptChakra,
     image: gameHub,
     maxChars: 75,
     heading: "GameHub",
@@ -48,7 +63,7 @@ export const projects: Project[] = [
       "This project uses Rawg's API to fetch various data such as games, platforms, critic scores, genres ect. It allows users to search games, filter games by platform, by genres and more. Built with Chalkra UI, I have obtained a lot of knowledge building this end-of-course project, and I look forward to advancing my knowledge working with APIs. ",
   },
   {
-    icon: reactTsFirebase,
+    icon: reactTsFirebaseChakra,
     image: xpenseTracker,
     maxChars: 75,
     heading: "XPense Tracker",
@@ -56,6 +71,16 @@ export const projects: Project[] = [
     repoPath: "https://github.com/im7ven/Expense-Tracker.git",
     children:
       "Built an expense tracker app with Firebase authentication, empowering users to manage their expenses effortlessly. Users can log expenses, apply filters by category, visualize data through Chart.js, and create personalized budget plans for better financial control.",
+  },
+  {
+    icon: reactTypescriptStyledCom,
+    image: audiophile,
+    maxChars: 75,
+    heading: "Audiophile e-commerce",
+    sitePath: "https://audiophile-e-commerce-rho.vercel.app/",
+    repoPath: "https://github.com/im7ven/Audiophile-e-commerce.git",
+    children:
+      "This Guru-ranked Frontend Mentor project showcases an e-commerce store specializing in audio tech products. Leveraging local storage and the Context API, I've crafted a seamless cart management system for a user-friendly experience. Following a mobile-first approach, this project ensures optimal usability on all devices.",
   },
   {
     icon: htmlCssJs,
@@ -68,7 +93,7 @@ export const projects: Project[] = [
       "Moshified is a Cloud hosting company. This is a static responsive webpage built with mostly HTML, and CSS. The page also includes some Javascript functionality.",
   },
   {
-    icon: reactTypescript,
+    icon: reactTypescriptStyledCom,
     image: jobListing,
     maxChars: 75,
     heading: "Static Job Listing",

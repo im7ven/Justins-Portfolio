@@ -75,6 +75,8 @@ export const ProjectBtn = styled.button`
 
 export const ProjectImg = styled.img`
   width: 100%;
+  height: 100%
+  max-height: 60rem;
 `;
 
 export const ProjectInfo = styled.div`
@@ -91,5 +93,6 @@ export const HeadingIconWrapper = styled.div`
 
 export const IconWrapper = styled.div`
   display: flex;
+  align-items: center;
   gap: 0.8rem;
 `;
