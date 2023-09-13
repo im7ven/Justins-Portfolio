@@ -18,9 +18,9 @@ import {
 import { MediaLink } from "../styles/styles-Project-section/styles-ProjectBlock";
 
 const aboutMe = [
-  "Here is my story. I am an enthusiastic individual who is passionate about continuous growth and learning. With an insatiable curiosity for new skills and technologies, I embrace every opportunity to expand my knowledge with a focus towards frontend development. My goal is to be persistent in my ability to create pleasant user experiences. ",
-  "Although my professional background lies within the food industry, I discovered a passion for web development that sparked a career transition. Everyday, I eagerly embrace new concepts and techniques, striving to improve. The challenge of pushing boundaries and exploring new possibilities excites me, and I am committed to my journey as a aspiring developer.",
-  "The opportunity to collaborate and work with others, in a web development environment, is something I look forward to. I genuinely enjoy meeting new people, fostering meaningful connections, and collectively working towards a common goal.",
+  "Here is my story. I am an enthusiastic individual who is passionate about continuous growth and learning. With an insatiable curiosity for new skills and technologies, I embrace every opportunity to expand my knowledge with a focus towards frontend development. ",
+  "While my primary focus is on frontend development, I'm equally drawn to exploring other facets of the tech world, including design and backend development. Beyond coding, I like to spend my time playing video games, crafting culinary delights, and cherishing quality moments with friends. I genuinely enjoy meeting new people, fostering meaningful connections, and collectively working towards a common goal.",
+  "Although my professional background lies within the food industry, I discovered a passion for web development that sparked a career transition.  Each day presents a fresh opportunity to embrace new concepts, and techniques, as I  pursue self-improvement.",
 ];
 
 export const Hero = () => {
