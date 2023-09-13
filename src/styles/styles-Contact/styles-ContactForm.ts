@@ -16,11 +16,21 @@ export const FormLabel = styled.label`
   ${highlightText}
   font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.2rem;
 
   @media screen and (min-width: 768px) {
     font-size: 2.4rem;
   }
+`;
+
+export const HelperText = styled.span`
+  margin-left: 1rem;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #cfdfdf;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
 `;
 
 export const FormInput = styled.input`
