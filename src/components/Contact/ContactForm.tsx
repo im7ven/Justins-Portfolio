@@ -9,6 +9,7 @@ import {
   LabelInputGroup,
   SubmittedMsg,
   FormBtn,
+  HelperText,
   //   SubmittedMsg,
 } from "../../styles/styles-Contact/styles-ContactForm";
 import { useState } from "react";
@@ -61,6 +62,7 @@ export const ContactForm = () => {
           id="first-name"
           type="text"
           name="firstName"
+          placeholder="e.g. Henry"
         />
         {errors.firstName?.type === "required" && (
           <FormErrors>The name field is required.</FormErrors>
@@ -74,7 +76,9 @@ export const ContactForm = () => {
       </LabelInputGroup>
 
       <LabelInputGroup>
-        <FormLabel htmlFor="last-name">Last Name</FormLabel>
+        <FormLabel htmlFor="last-name">
+          Last Name<HelperText>Optional</HelperText>
+        </FormLabel>
         <FormInput
           {...register("lastName", {
             maxLength: 18,
@@ -82,6 +86,7 @@ export const ContactForm = () => {
           id="last-name"
           type="text"
           name="lastName"
+          placeholder="e.g. Hill"
         />
 
         {errors.lastName?.type === "maxLength" && (
@@ -102,6 +107,7 @@ export const ContactForm = () => {
           id="email"
           type="text"
           name="email"
+          placeholder="e.g. example@gmail.com"
         />
         {errors.email?.type === "required" && (
           <FormErrors>The email field is required.</FormErrors>
@@ -117,6 +123,7 @@ export const ContactForm = () => {
           rows={6}
           cols={20}
           name="comment"
+          placeholder="What would you like to say?"
         ></FormTextarea>
         {errors.comment?.type === "required" && (
           <FormErrors>Comment field is required.</FormErrors>
