@@ -7,9 +7,15 @@ import { useEffect, useState } from "react";
 import { SkillsBlock } from "./components/Skills-section/SkillsBlock";
 import { ContactBlock } from "./components/Contact/ContactBlock";
 import { Footer } from "./components/Footer";
+import { Preloader } from "./components/Preloader";
 
 function App() {
   const [maxProjects, setMaxProjects] = useState(3);
+  const [isPreloading, setIsPreloading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setIsPreloading(false), 10000);
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -19,9 +25,7 @@ function App() {
         setMaxProjects(3);
       }
     };
-
     handleResize();
-
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -30,6 +34,8 @@ function App() {
   }, []);
   return (
     <>
+      {isPreloading ? <Preloader /> : null}
+
       <GlobalStyles />
       <NavBar />
       <Hero />
