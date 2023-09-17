@@ -19,7 +19,7 @@ export const Preloader = () => {
 
   const startTextAnimation = async () => {
     await new Promise((resolve) => setTimeout(resolve, 400));
-    await textControls1.start({
+    textControls1.start({
       y: 0,
       opacity: 1,
       scale: 1,
@@ -32,14 +32,14 @@ export const Preloader = () => {
 
     await new Promise((resolve) => setTimeout(resolve, 700));
 
-    await textControls2.start({
+    textControls2.start({
       y: 0,
       opacity: 1,
       scale: 1,
       transition: { type: "spring", damping: 10, stiffness: 100 },
     });
 
-    await new Promise((resolve) => setTimeout(resolve, 700));
+    await new Promise((resolve) => setTimeout(resolve, 1800));
 
     textControls3.start({
       y: 0,
@@ -62,7 +62,7 @@ export const Preloader = () => {
       transition: { type: "spring", damping: 10, stiffness: 100 },
     });
 
-    await new Promise((resolve) => setTimeout(resolve, 3000));
+    await new Promise((resolve) => setTimeout(resolve, 2500));
     textControls1.start({
       y: -1000,
       //   transition: { duration: 0.3 },
@@ -87,7 +87,7 @@ export const Preloader = () => {
 
   useEffect(() => {
     startTextAnimation();
-    setTimeout(startAnimation, 7500);
+    setTimeout(startAnimation, 6000);
   }, []);
 
   return (
