@@ -87,7 +87,7 @@ export const Preloader = () => {
 
   useEffect(() => {
     startTextAnimation();
-    setTimeout(startAnimation, 6000);
+    setTimeout(startAnimation, 6500);
   }, []);
 
   return (
