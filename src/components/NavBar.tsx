@@ -21,8 +21,8 @@ export const NavBar = () => {
       <NavTitle>JA</NavTitle>
       <NavIconWrapper onClick={handleIconVisibility}>
         <CgMenuBoxed
-          color={isNavListVisible ? "#cecece" : "gray"}
-          size="60px"
+          color={isNavListVisible ? "#fff" : "#cecece"}
+          size="45px"
         />
       </NavIconWrapper>
 

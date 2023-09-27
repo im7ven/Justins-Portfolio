@@ -71,4 +71,8 @@ export const NavLinks = styled.a`
   color: #cecece;
   font-size: 2.4rem;
   text-decoration: none;
+
+  &:hover {
+    color: #fff;
+  }
 `;
