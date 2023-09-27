@@ -70,6 +70,11 @@ export const ContactBtn = css`
   font-weight: 700;
   background: #6200f5;
   cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 export const FormBtn = styled.button`
   ${ContactBtn}
