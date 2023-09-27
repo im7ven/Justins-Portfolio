@@ -55,12 +55,12 @@ export const ProjectCard = ({
           </ProjectDescription>
           <ExpandBtn onClick={handleExpand}>{renderBtnLabel}</ExpandBtn>
           <ProjectBtnWrapper>
-            <a role="button" href={sitePath} target="_blank">
-              <ProjectBtn>Site</ProjectBtn>
-            </a>
-            <a role="button" href={repoPath} target="_blank">
-              <ProjectBtn>Repo</ProjectBtn>
-            </a>
+            <ProjectBtn role="button" href={sitePath} target="_blank">
+              Site
+            </ProjectBtn>
+            <ProjectBtn role="button" href={repoPath} target="_blank">
+              Repo
+            </ProjectBtn>
           </ProjectBtnWrapper>
         </div>
       </ProjectInfo>

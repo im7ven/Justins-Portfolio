@@ -51,7 +51,7 @@ export const ProjectBtnWrapper = styled.div`
   justify-content: center;
   margin-top: 4rem;
 `;
-export const ProjectBtn = styled.button`
+export const ProjectBtn = styled.a`
   border-radius: 10px;
   color: #fff;
   padding: 1rem 3rem;
@@ -62,6 +62,12 @@ export const ProjectBtn = styled.button`
   font-weight: 700;
   background: #6200f5;
   cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.04);
+  }
 
   @media screen and (min-width: 500px) {
     padding: 1rem 4rem;
