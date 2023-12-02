@@ -35,7 +35,7 @@ export const ProjectBlock = ({ maxProjects, projects }: Props) => {
         <ProjectSectionHeading>My Projects</ProjectSectionHeading>
         <ProjectGridWrapper>
           {visibleProjects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
+            <ProjectCard index={index} key={index} {...project} />
           ))}
         </ProjectGridWrapper>
         <ExpandProjectsBtn onClick={handleShowMore}>

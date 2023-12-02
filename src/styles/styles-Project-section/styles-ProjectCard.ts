@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 import { highlightText } from "../styles.typography";
+import { motion } from "framer-motion";
 
-export const ProjectCardWrapper = styled.article`
+export const ProjectCardWrapper = styled(motion.article)`
   border: 10px solid #232323;
   background: #232323;
   border-radius: 30px;

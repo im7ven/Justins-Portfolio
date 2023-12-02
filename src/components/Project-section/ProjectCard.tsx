@@ -23,7 +23,22 @@ interface Props {
   maxChars?: number;
   repoPath: string;
   sitePath: string;
+  index: number;
 }
+
+const fadeInAnimation = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.1 * index,
+    },
+  }),
+};
 
 export const ProjectCard = ({
   image,
@@ -33,6 +48,7 @@ export const ProjectCard = ({
   icon,
   repoPath,
   sitePath,
+  index,
 }: Props) => {
   const [isExpanded, setExpanded] = useState(false);
 
@@ -41,7 +57,15 @@ export const ProjectCard = ({
   const renderBtnLabel = isExpanded ? "Less" : "More";
 
   return (
-    <ProjectCardWrapper>
+    <ProjectCardWrapper
+      variants={fadeInAnimation}
+      initial="initial"
+      whileInView="animate"
+      viewport={{
+        once: true,
+      }}
+      custom={index}
+    >
       <ProjectImg src={image} alt="project" />
       <ProjectInfo>
         <HeadingIconWrapper>
