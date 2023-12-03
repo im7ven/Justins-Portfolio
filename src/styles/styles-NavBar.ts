@@ -11,6 +11,7 @@ export const Nav = styled.div`
   position: relative;
   background: #000;
   z-index: 44;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     padding: 0.5rem 5rem;
@@ -34,14 +35,16 @@ export const NavIconWrapper = styled(motion.div)`
 
 export const NavList = styled(motion.ul)`
   list-style: none;
+  padding: 0;
   width: 100%;
   margin: 0;
   opacity: 0;
   max-height: 0;
+  overflow: hidden;
   transition: max-height 0.3s ease-out, opacity 0.1s ease-in;
 
   &.visible {
-    padding: 3rem 0;
+    // padding: 3rem 0;
     opacity: 1;
     max-height: 200px;
   }
@@ -57,12 +60,16 @@ export const NavList = styled(motion.ul)`
 `;
 
 export const NavListItems = styled.li`
-  padding: 1rem 0;
+  text-align: center;
+  padding: 1.5rem 0;
   cursor: pointer;
-  border-bottom: 2px solid white;
   transition: all 0.3s;
+  background: #030303;
+  margin: 1rem 0;
 
   @media screen and (min-width: 768px) {
+    background: 0;
+    margin: 0;
     border: 0;
     &:hover {
       color: #fff;
