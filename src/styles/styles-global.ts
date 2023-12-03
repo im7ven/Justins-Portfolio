@@ -15,6 +15,7 @@ body{
     box-sizing: border-box;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     background:#000;
+    overflow-x: hidden;
 
 }
 
