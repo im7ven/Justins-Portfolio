@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Grid1By2, containerCenter, containerLg } from "./styles-utilities";
 import { h1, heading, highlightText } from "./styles.typography";
+import { motion } from "framer-motion";
 
 export const HeroWrapper = styled.section`
   ${Grid1By2}
@@ -9,7 +10,6 @@ export const HeroWrapper = styled.section`
   padding:0 2rem;
   min-height: 100vh;
   margin-bottom: 6rem;
-  overflow: hidden;
   position: relative;
 
   &::before {
@@ -25,22 +25,31 @@ export const HeroWrapper = styled.section`
     margin-bottom: 0;
   }
 `;
+export const Highlight = styled.p`
+  ${heading}
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+`;
 
 export const H1 = styled.h1`
   ${h1}
   ${heading}
 `;
 
-export const Highlight = styled.span`
+export const Title = styled.h2`
   ${highlightText}
+  ${h1}
 `;
 
-export const Avatar = styled.img`
+export const Avatar = styled(motion.img)`
   border-radius: 50%;
   grid-row: 1;
   max-width: 30rem;
   box-shadow: 0 10px 5px 0 #b2b2b2;
   max-width: 100%;
+  padding: 0 0.5rem;
 
   @media screen and (min-width: 500px) {
     max-width: 40rem;
@@ -62,11 +71,12 @@ export const HeroIconWrapper = styled.div`
   margin-top: 2rem;
 `;
 
-export const AvatarAboutWrapper = styled.div`
+export const AvatarAboutWrapper = styled(motion.div)`
   display: grid;
   justify-items: center;
   grid-template-rows: 100%;
   grid-row: 1;
+
   @media screen and (min-width: 768px) {
     grid-column: 2;
   }

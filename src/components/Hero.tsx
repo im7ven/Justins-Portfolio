@@ -14,8 +14,18 @@ import {
   AboutBtn,
   AboutHeading,
   ExpandAboutBtn,
+  Title,
 } from "../styles/styles.Hero";
 import { MediaLink } from "../styles/styles-Project-section/styles-ProjectBlock";
+import {
+  anticipate,
+  backIn,
+  backInOut,
+  circIn,
+  easeIn,
+  motion,
+} from "framer-motion";
+import FadeUp from "./FadeUp";
 
 const aboutMe = [
   "Here is my story. I am an enthusiastic individual who is passionate about continuous growth and learning. With an insatiable curiosity for new skills and technologies, I embrace every opportunity to expand my knowledge with a focus towards frontend development. ",
@@ -61,28 +71,49 @@ export const Hero = () => {
       </ExpandAboutBtn>
     ) : null;
 
+  const fadeInAnimationVariants = {
+    initial: {
+      x: -200,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <>
       <HeroWrapper>
         <div>
-          <H1>
-            Hi my name is Justin Alexander,{" "}
-            <Highlight>Frontend Web Developer</Highlight>
-          </H1>
-          <Separator />
-          <HeroIconWrapper>
-            <MediaLink target="_blank" href="https://github.com/im7ven">
-              <FaGithubSquare color="#fff" size="65px" />
-            </MediaLink>
-            <MediaLink
-              target="_blank"
-              href="https://www.linkedin.com/in/justin-alexander-27542522b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtoFsthPqR0mXJnE4jjj2zA%3D%3D"
-            >
-              <FaLinkedin color="#fff" size="65px" />
-            </MediaLink>
-            <AboutBtn onClick={handleButtonClick}>About Me</AboutBtn>
-          </HeroIconWrapper>
+          <FadeUp>
+            <Highlight>Hi, my name is</Highlight>
+          </FadeUp>
+          <FadeUp>
+            <H1>Justin Alexander,</H1>
+          </FadeUp>
+          <FadeUp>
+            <Title>Frontend Web Developer</Title>
+          </FadeUp>
+          <FadeUp>
+            <Separator />
+          </FadeUp>
+          <FadeUp>
+            <HeroIconWrapper>
+              <MediaLink target="_blank" href="https://github.com/im7ven">
+                <FaGithubSquare color="#fff" size="65px" />
+              </MediaLink>
+              <MediaLink
+                target="_blank"
+                href="https://www.linkedin.com/in/justin-alexander-27542522b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtoFsthPqR0mXJnE4jjj2zA%3D%3D"
+              >
+                <FaLinkedin color="#fff" size="65px" />
+              </MediaLink>
+              <AboutBtn onClick={handleButtonClick}>About Me</AboutBtn>
+            </HeroIconWrapper>
+          </FadeUp>
         </div>
+
         <AvatarAboutWrapper>
           <AvatarWrapper
             style={{
@@ -90,7 +121,13 @@ export const Hero = () => {
               zIndex: showAboutMe ? "0" : "1",
             }}
           >
-            <Avatar src={avatar} alt="Avatar of Justin" />
+            <Avatar
+              initial={{ x: 600, rotate: 180, opacity: 0 }}
+              animate={{ x: 0, rotate: 0, opacity: 1 }}
+              transition={{ duration: 0.4, ease: easeIn, delay: 0.3 }}
+              src={avatar}
+              alt="Avatar of Justin"
+            />
           </AvatarWrapper>
           <AboutWrapper
             style={{
