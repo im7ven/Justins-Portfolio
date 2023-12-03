@@ -1,6 +1,6 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { highlightText } from "./styles.typography";
-import { motion } from "framer-motion";
 
 export const Nav = styled.div`
   display: flex;

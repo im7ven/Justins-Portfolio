@@ -1,30 +1,23 @@
-import { useState, useEffect } from "react";
+import { easeIn } from "framer-motion";
+import { useEffect, useState } from "react";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import avatar from "../images/avatar.webp";
+import { MediaLink } from "../styles/styles-Project-section/styles-ProjectBlock";
 import {
+  AboutBtn,
+  AboutHeading,
+  AboutWrapper,
   Avatar,
+  AvatarAboutWrapper,
+  AvatarWrapper,
+  ExpandAboutBtn,
   H1,
   HeroIconWrapper,
   HeroWrapper,
   Highlight,
   Separator,
-  AvatarAboutWrapper,
-  AvatarWrapper,
-  AboutWrapper,
-  AboutBtn,
-  AboutHeading,
-  ExpandAboutBtn,
   Title,
 } from "../styles/styles.Hero";
-import { MediaLink } from "../styles/styles-Project-section/styles-ProjectBlock";
-import {
-  anticipate,
-  backIn,
-  backInOut,
-  circIn,
-  easeIn,
-  motion,
-} from "framer-motion";
 import FadeUp from "./FadeUp";
 
 const aboutMe = [
