@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { highlightText } from "./styles.typography";
+import { motion } from "framer-motion";
 
 export const Nav = styled.div`
   display: flex;
@@ -7,20 +8,23 @@ export const Nav = styled.div`
   align-items: center;
   flex-wrap: wrap;
   padding: 1.8rem;
+  position: relative;
+  background: #000;
+  z-index: 44;
 
   @media screen and (min-width: 768px) {
-    padding: 2.5rem 5rem;
+    padding: 0.5rem 5rem;
   }
 `;
 
-export const NavTitle = styled.h2`
+export const NavTitle = styled(motion.h2)`
   ${highlightText}
   font-size: 5.5rem;
   margin: 0;
   font-family: "Gotu", sans-serif;
 `;
 
-export const NavIconWrapper = styled.div`
+export const NavIconWrapper = styled(motion.div)`
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
@@ -28,7 +32,7 @@ export const NavIconWrapper = styled.div`
   }
 `;
 
-export const NavList = styled.ul`
+export const NavList = styled(motion.ul)`
   list-style: none;
   width: 100%;
   margin: 0;
