@@ -4,8 +4,8 @@ import { highlightText } from "./styles.typography";
 
 export const Nav = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 1.8rem;
   position: relative;
