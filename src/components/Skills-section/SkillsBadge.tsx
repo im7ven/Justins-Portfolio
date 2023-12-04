@@ -10,7 +10,7 @@ export const SkillsBadge = ({ children, badgeLabel }: Props) => {
   return (
     <BadgeWrapper>
       {children}
-      <h2>{badgeLabel}</h2>
+      <h2 style={{ margin: "0", display: "inline" }}>{badgeLabel}</h2>
     </BadgeWrapper>
   );
 };

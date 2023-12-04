@@ -2,20 +2,21 @@ import {
   Author,
   FlexWrapper,
   FooterIconWrapper,
-  FooterTitle,
   FooterWrapper,
   Hr,
 } from "../styles/styles-Footer";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { MediaLink } from "../styles/styles-Project-section/styles-ProjectBlock";
+import { Logo } from "../styles/styles-NavBar";
+import logo from "../images/Logo.png";
 
 export const Footer = () => {
   return (
     <FooterWrapper>
       <FlexWrapper>
         <div>
-          <FooterTitle>JA</FooterTitle>
+          <Logo src={logo} alt="Logo"></Logo>
           <Hr />
           <Author>&copy;2023 Justin Alexander</Author>
         </div>

@@ -1,4 +1,7 @@
+import { easeIn } from "framer-motion";
 import { useState } from "react";
+import { CgMenuBoxed } from "react-icons/cg";
+import logo from "../images/Logo.png";
 import {
   Logo,
   Nav,
@@ -7,9 +10,6 @@ import {
   NavList,
   NavListItems,
 } from "../styles/styles-NavBar";
-import { CgMenuBoxed } from "react-icons/cg";
-import { easeIn } from "framer-motion";
-import logo from "../images/Logo.png";
 
 export const NavBar = () => {
   const [isNavListVisible, setNavListVisibility] = useState(false);
@@ -20,7 +20,7 @@ export const NavBar = () => {
 
   return (
     <Nav>
-      <a style={{ flexGrow: 1 }} href="/">
+      <a href="/">
         <Logo
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

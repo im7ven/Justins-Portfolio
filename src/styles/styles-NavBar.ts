@@ -20,7 +20,7 @@ export const Nav = styled.div`
 
 export const Logo = styled(motion.img)`
   ${highlightText}
-  width: 7rem;
+  width: 6rem;
   margin-right: auto;
 `;
 
@@ -36,15 +36,13 @@ export const NavList = styled(motion.ul)`
   list-style: none;
   padding: 0;
   width: 100%;
-  flex-grow: 1;
-  margin: 0;
+  margin: 0 auto;
   opacity: 0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out, opacity 0.1s ease-in;
 
   &.visible {
-    // padding: 3rem 0;
     opacity: 1;
     max-height: 200px;
   }
