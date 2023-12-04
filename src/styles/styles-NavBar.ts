@@ -4,7 +4,7 @@ import { highlightText } from "./styles.typography";
 
 export const Nav = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 1.8rem;
@@ -14,15 +14,14 @@ export const Nav = styled.div`
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
-    padding: 0.5rem 5rem;
+    padding: 1.5rem 3rem;
   }
 `;
 
-export const NavTitle = styled(motion.h2)`
+export const Logo = styled(motion.img)`
   ${highlightText}
-  font-size: 5.5rem;
-  margin: 0;
-  font-family: "Gotu", sans-serif;
+  width: 7rem;
+  margin-right: auto;
 `;
 
 export const NavIconWrapper = styled(motion.div)`
@@ -37,6 +36,7 @@ export const NavList = styled(motion.ul)`
   list-style: none;
   padding: 0;
   width: 100%;
+  flex-grow: 1;
   margin: 0;
   opacity: 0;
   max-height: 0;
@@ -73,7 +73,6 @@ export const NavListItems = styled.li`
     border: 0;
     &:hover {
       color: #fff;
-      transform: scale(1.2);
     }
   }
 `;

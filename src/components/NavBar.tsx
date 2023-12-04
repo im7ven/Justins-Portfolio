@@ -1,14 +1,15 @@
 import { useState } from "react";
 import {
+  Logo,
   Nav,
   NavIconWrapper,
   NavLinks,
   NavList,
   NavListItems,
-  NavTitle,
 } from "../styles/styles-NavBar";
 import { CgMenuBoxed } from "react-icons/cg";
 import { easeIn } from "framer-motion";
+import logo from "../images/Logo.png";
 
 export const NavBar = () => {
   const [isNavListVisible, setNavListVisibility] = useState(false);
@@ -19,16 +20,18 @@ export const NavBar = () => {
 
   return (
     <Nav>
-      <NavTitle
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{
-          duration: 0.4,
-          ease: easeIn,
-        }}
-      >
-        JA
-      </NavTitle>
+      <a style={{ flexGrow: 1 }} href="/">
+        <Logo
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 0.4,
+            ease: easeIn,
+          }}
+          src={logo}
+          alt=""
+        />
+      </a>
       <NavIconWrapper
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
