@@ -91,7 +91,9 @@ export const Hero = () => {
               >
                 <FaLinkedin color="#fff" size="65px" />
               </MediaLink>
-              <AboutBtn onClick={handleButtonClick}>About Me</AboutBtn>
+              <AboutBtn onClick={handleButtonClick}>
+                {showAboutMe ? "Hide About" : "Show About"}
+              </AboutBtn>
             </HeroIconWrapper>
           </FadeUp>
         </div>
