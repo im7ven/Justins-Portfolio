@@ -26,7 +26,7 @@ export const SkillsGridWrapper = styled.div`
   margin: 10rem auto;
 
   @media screen and (min-width: 1100px) {
-    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(2, 1fr);
   }
 `;
 
@@ -46,8 +46,14 @@ export const SkillsHeading = styled.h2`
 
 export const SkillsBadgeWrapper = styled.div`
   display: flex;
+  row-gap: 2rem;
   flex-direction: column;
-  gap: 3rem;
-  width: 100%;
-  max-width: 40rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 120rem;
+
+  @media screen and (min-width: 550px) {
+    flex-direction: row;
+    column-gap: 4rem;
+  }
 `;

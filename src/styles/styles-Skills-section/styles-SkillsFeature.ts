@@ -6,6 +6,8 @@ export const FeatureWrapper = styled.article`
   flex-direction: column;
   gap: 4rem;
   margin-bottom: 3rem;
+  margin-top: 8rem;
+  max-width: 100rem;
 
   @media screen and (min-width: 450px) {
     flex-direction: row;

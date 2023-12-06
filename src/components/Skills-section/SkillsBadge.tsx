@@ -10,7 +10,15 @@ export const SkillsBadge = ({ children, badgeLabel }: Props) => {
   return (
     <BadgeWrapper>
       {children}
-      <h2 style={{ margin: "0", display: "inline" }}>{badgeLabel}</h2>
+      <p
+        style={{
+          margin: "1rem  0 0 0",
+
+          letterSpacing: ".8rem",
+        }}
+      >
+        {badgeLabel}
+      </p>
     </BadgeWrapper>
   );
 };
