@@ -1,16 +1,16 @@
+import { backInOut, motion } from "framer-motion";
+import communicationIcon from "../../images/communication.webp";
+import creativeIcon from "../../images/creativity.webp";
+import teamworkIcon from "../../images/teamwork.webp";
 import {
   SkillsBadgeWrapper,
   SkillsGridWrapper,
   SkillsHeading,
   SkillsWrapper,
 } from "../../styles/styles-Skills-section/styles-SkillsBlock";
-import { SkillsFeature } from "./SkillsFeature";
-import creativeIcon from "../../images/creativity.webp";
-import communicationIcon from "../../images/communication.webp";
-import teamworkIcon from "../../images/teamwork.webp";
 import { SkillsBadge } from "./SkillsBadge";
 import skillData from "./SkillsData";
-import { backIn, backInOut, easeIn, motion } from "framer-motion";
+import { SkillsFeature } from "./SkillsFeature";
 
 const fadeInAnimationVariants = {
   initial: {
