@@ -9,13 +9,23 @@ import {
 } from "../../styles/styles-Contact/styles-ContactBlock";
 import { AiFillWechat } from "react-icons/ai";
 import { ContactForm } from "./ContactForm";
+import { motion } from "framer-motion";
+import {
+  fadeLeftAnimationVariants,
+  fadeRightAnimationVariants,
+} from "../Skills-section/SkillsBlock";
 
 export const ContactBlock = () => {
   return (
     <ContactWrapper id="contact">
       <ContactHeading>Contact</ContactHeading>
       <ContactGridWrapper>
-        <div>
+        <motion.div
+          variants={fadeRightAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
           <HeadingIconFlex>
             <DescriptionHeading>Lets connect</DescriptionHeading>
             <AiFillWechat size="45px" color="#fff" />
@@ -32,8 +42,16 @@ export const ContactBlock = () => {
           <a href="mailto:alexanderrr416@gmail.com">
             <EmailBtn>Email Me</EmailBtn>
           </a>
-        </div>
-        <ContactForm />
+        </motion.div>
+        <motion.div
+          style={{ width: "80%", position: "relative" }}
+          variants={fadeLeftAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
+          <ContactForm />
+        </motion.div>
       </ContactGridWrapper>
     </ContactWrapper>
   );
