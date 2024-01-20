@@ -8,6 +8,9 @@ import {
   SiFirebase,
   SiChakraui,
   SiStyledcomponents,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiMongodb,
 } from "react-icons/si";
 import moshified from "../../images/Moshified2.webp";
 import ageCalc from "../../images/age-calc.webp";
@@ -15,6 +18,8 @@ import jobListing from "../../images/job-listing.webp";
 import gameHub from "../../images/gamehub.webp";
 import xpenseTracker from "../../images/XpenseT.webp";
 import audiophile from "../../images/audiophileE-commerce.webp";
+import coffeeroatsets from "../../images/coffeeroasters-black.vercel.app_(HD SCREENSHOT).png";
+import shippuden from "../../images/shippuden-app.vercel.app_(HD SCREENSHOT).png";
 
 interface Project {
   icon: ReactNode[];
@@ -51,6 +56,12 @@ const reactTsFirebaseChakra: ReactNode[] = [
   <SiChakraui size="30px" color="#70cad0" />,
 ];
 
+const nextjsTailwindMongo: ReactNode[] = [
+  <SiNextdotjs size="30px" color="#fff" />,
+  <SiTailwindcss size="30px" color="#00DDE1" />,
+  <SiMongodb size="30px" color="#00ed64" />,
+];
+
 export const projects: Project[] = [
   {
     icon: reactTypescriptChakra,
@@ -81,6 +92,26 @@ export const projects: Project[] = [
     repoPath: "https://github.com/im7ven/Audiophile-e-commerce.git",
     children:
       "This Guru-ranked Frontend Mentor project showcases an e-commerce store specializing in audio tech products. Leveraging local storage and the Context API, I've crafted a seamless cart management system for a user-friendly experience. Following a mobile-first approach, this project ensures optimal usability on all devices.",
+  },
+  {
+    icon: reactTypescriptStyledCom,
+    image: coffeeroatsets,
+    maxChars: 75,
+    heading: "Coffeeroasters",
+    sitePath: "https://coffeeroasters-black.vercel.app/",
+    repoPath: "https://github.com/im7ven/coffeeroasters-subscription.git",
+    children:
+      "Coffeeroatsers subscription website, this project was challenged by Frontend Mentor. Built with React, Typescript, and styled components.",
+  },
+  {
+    icon: nextjsTailwindMongo,
+    image: shippuden,
+    maxChars: 75,
+    heading: "Shippuden Hub",
+    sitePath: "https://shippuden-app.vercel.app/",
+    repoPath: "https://github.com/im7ven/shippudenHub.git",
+    children:
+      "I created this project after exploring the Next js framework. I decided to build a Naruto shippden API using Typescript, and Mongo Db",
   },
   {
     icon: htmlCssJs,
