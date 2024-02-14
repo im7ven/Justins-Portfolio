@@ -19,7 +19,6 @@ import gameHub from "../../images/gamehub.webp";
 import xpenseTracker from "../../images/XpenseT.webp";
 import audiophile from "../../images/audiophileE-commerce.webp";
 import coffeeroatsets from "../../images/coffeeroasters-black.vercel.app_(HD SCREENSHOT).png";
-import shippuden from "../../images/shippuden-app.vercel.app_(HD SCREENSHOT).png";
 
 interface Project {
   icon: ReactNode[];
@@ -54,12 +53,6 @@ const reactTsFirebaseChakra: ReactNode[] = [
   <SiTypescript size="30px" color="dodgerblue" />,
   <SiFirebase size="30px" color="#ffcb2b" />,
   <SiChakraui size="30px" color="#70cad0" />,
-];
-
-const nextjsTailwindMongo: ReactNode[] = [
-  <SiNextdotjs size="30px" color="#fff" />,
-  <SiTailwindcss size="30px" color="#00DDE1" />,
-  <SiMongodb size="30px" color="#00ed64" />,
 ];
 
 export const projects: Project[] = [
