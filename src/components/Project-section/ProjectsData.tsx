@@ -103,16 +103,7 @@ export const projects: Project[] = [
     children:
       "Coffeeroatsers subscription website, this project was challenged by Frontend Mentor. Built with React, Typescript, and styled components.",
   },
-  {
-    icon: nextjsTailwindMongo,
-    image: shippuden,
-    maxChars: 75,
-    heading: "Shippuden Hub",
-    sitePath: "https://shippuden-app.vercel.app/",
-    repoPath: "https://github.com/im7ven/shippudenHub.git",
-    children:
-      "I created this project after exploring the Next js framework. I decided to build a Naruto shippden API using Typescript, and Mongo Db",
-  },
+
   {
     icon: htmlCssJs,
     image: moshified,

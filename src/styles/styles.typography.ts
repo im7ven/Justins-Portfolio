@@ -17,6 +17,7 @@ export const h1 = css`
   line-height: 1.3;
   text-align: center;
   margin: 0;
+  font-weight: 900;
 
   @media screen and (min-width: 768px) {
     font-size: 5rem;
