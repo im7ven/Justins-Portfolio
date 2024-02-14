@@ -8,9 +8,6 @@ import {
   SiFirebase,
   SiChakraui,
   SiStyledcomponents,
-  SiNextdotjs,
-  SiTailwindcss,
-  SiMongodb,
 } from "react-icons/si";
 import moshified from "../../images/Moshified2.webp";
 import ageCalc from "../../images/age-calc.webp";
