@@ -8,6 +8,9 @@ import {
   SiFirebase,
   SiChakraui,
   SiStyledcomponents,
+  SiPrisma,
+  SiTailwindcss,
+  SiNextdotjs,
 } from "react-icons/si";
 import moshified from "../../images/Moshified2.webp";
 import ageCalc from "../../images/age-calc.webp";
@@ -16,6 +19,7 @@ import gameHub from "../../images/gamehub.webp";
 import xpenseTracker from "../../images/XpenseT.webp";
 import audiophile from "../../images/audiophileE-commerce.webp";
 import coffeeroatsets from "../../images/coffeeroasters-black.vercel.app_(HD SCREENSHOT).png";
+import kanban from "../../images/kb-board-preview.png";
 
 interface Project {
   icon: ReactNode[];
@@ -52,7 +56,24 @@ const reactTsFirebaseChakra: ReactNode[] = [
   <SiChakraui size="30px" color="#70cad0" />,
 ];
 
+const nextPrismaTailwindDaisyTs: ReactNode[] = [
+  <SiNextdotjs size="30px" color="#fff" />,
+  <SiTypescript size="30px" color="dodgerblue" />,
+  <SiPrisma color="#00111C" size="30px" />,
+  <SiTailwindcss color="#26C5FF" size="30px" />,
+];
+
 export const projects: Project[] = [
+  {
+    icon: nextPrismaTailwindDaisyTs,
+    image: kanban,
+    maxChars: 75,
+    heading: "Kanban Board",
+    sitePath: "https://kb-board-eight.vercel.app/",
+    repoPath: "https://github.com/im7ven/KB-Board",
+    children:
+      "Built with Next Js, TypeScript, and an array of other technology such as Prisma, Next Auth, React Query, Zod, Zustand, and DaisyUI. This fullstack task board features a user friendly design and allows users to keep tasks organized.",
+  },
   {
     icon: reactTypescriptChakra,
     image: gameHub,
@@ -64,16 +85,6 @@ export const projects: Project[] = [
       "This project uses Rawg's API to fetch various data such as games, platforms, critic scores, genres ect. It allows users to search games, filter games by platform, by genres and more. Built with Chalkra UI, I have obtained a lot of knowledge building this end-of-course project, and I look forward to advancing my knowledge working with APIs. ",
   },
   {
-    icon: reactTsFirebaseChakra,
-    image: xpenseTracker,
-    maxChars: 75,
-    heading: "XPense Tracker",
-    sitePath: "https://x-pense-tracker.vercel.app/",
-    repoPath: "https://github.com/im7ven/Expense-Tracker.git",
-    children:
-      "Built an expense tracker app with Firebase authentication, empowering users to manage their expenses effortlessly. Users can log expenses, apply filters by category, visualize data through Chart.js, and create personalized budget plans for better financial control.",
-  },
-  {
     icon: reactTypescriptStyledCom,
     image: audiophile,
     maxChars: 75,
@@ -82,6 +93,16 @@ export const projects: Project[] = [
     repoPath: "https://github.com/im7ven/Audiophile-e-commerce.git",
     children:
       "This Guru-ranked Frontend Mentor project showcases an e-commerce store specializing in audio tech products. Leveraging local storage and the Context API, I've crafted a seamless cart management system for a user-friendly experience. Following a mobile-first approach, this project ensures optimal usability on all devices.",
+  },
+  {
+    icon: reactTsFirebaseChakra,
+    image: xpenseTracker,
+    maxChars: 75,
+    heading: "XPense Tracker",
+    sitePath: "https://x-pense-tracker.vercel.app/",
+    repoPath: "https://github.com/im7ven/Expense-Tracker.git",
+    children:
+      "Built an expense tracker app with Firebase authentication, empowering users to manage their expenses effortlessly. Users can log expenses, apply filters by category, visualize data through Chart.js, and create personalized budget plans for better financial control.",
   },
   {
     icon: reactTypescriptStyledCom,
