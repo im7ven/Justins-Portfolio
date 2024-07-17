@@ -65,16 +65,6 @@ const nextPrismaTailwindDaisyTs: ReactNode[] = [
 
 export const projects: Project[] = [
   {
-    icon: nextPrismaTailwindDaisyTs,
-    image: kanban,
-    maxChars: 75,
-    heading: "Kanban Board",
-    sitePath: "https://kb-board-eight.vercel.app/",
-    repoPath: "https://github.com/im7ven/KB-Board",
-    children:
-      "Built with Next Js, TypeScript, and an array of other technology such as Prisma, Next Auth, React Query, Zod, Zustand, and DaisyUI. This fullstack task board features a user friendly design and allows users to keep tasks organized.",
-  },
-  {
     icon: reactTypescriptChakra,
     image: gameHub,
     maxChars: 75,
@@ -103,6 +93,16 @@ export const projects: Project[] = [
     repoPath: "https://github.com/im7ven/Expense-Tracker.git",
     children:
       "Built an expense tracker app with Firebase authentication, empowering users to manage their expenses effortlessly. Users can log expenses, apply filters by category, visualize data through Chart.js, and create personalized budget plans for better financial control.",
+  },
+  {
+    icon: nextPrismaTailwindDaisyTs,
+    image: kanban,
+    maxChars: 75,
+    heading: "Kanban Board",
+    sitePath: "https://kb-board-eight.vercel.app/",
+    repoPath: "https://github.com/im7ven/KB-Board",
+    children:
+      "Built with Next Js, TypeScript, and an array of other technology such as Prisma, Next Auth, React Query, Zod, Zustand, and DaisyUI. This fullstack task board features a user friendly design and allows users to keep tasks organized.",
   },
   {
     icon: reactTypescriptStyledCom,
